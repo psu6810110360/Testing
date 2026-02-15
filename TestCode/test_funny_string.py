@@ -15,3 +15,5 @@ class FunnyStringTest(unittest.TestCase):
         self.assertEqual(result, "Not Funny")
     def test_give_aaaaa_should_be_funny(self):
         self.assertEqual(funny_string("aaaaa"), "Funny")
+    def test_give_length_2_string_should_be_funny(self):
+        self.assertEqual(funny_string("ab"), "Funny")
