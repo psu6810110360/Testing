@@ -9,5 +9,14 @@ class CaesarCipherTest(unittest.TestCase):
 
         self.assertEqual(result, "okffng-Qwvb")
 
-    def test_give_k_more_than_26(self):
-        self.assertEqual(caesar_cipher("abc", 27), "bcd")
+    def test_give_k0_should_not_change(self):
+        self.assertEqual(caesar_cipher("Hello-World", 0), "Hello-World")
+
+    def test_give_symbols_should_not_change(self):
+        self.assertEqual(caesar_cipher("123 !@#", 10), "123 !@#")
+
+    def test_give_large_k_52_should_be_same(self):
+        self.assertEqual(caesar_cipher("abc", 52), "abc")
+
+    def test_give_full_alphabet_shift(self):
+        self.assertEqual(caesar_cipher("Always", 5), "Fqbfdx")
