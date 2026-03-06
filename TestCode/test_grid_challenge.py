@@ -1,5 +1,5 @@
 import unittest
-from ProductCode import grid_challenge
+from ProductCode.grid_challenge import grid_challenge
 
 
 class GridChallengeTest(unittest.TestCase):

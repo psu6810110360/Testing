@@ -1,6 +1,6 @@
 import unittest
 
-from ProductCode import two_characters
+from ProductCode.two_characters import two_characters
 
 
 class TwoCharactersTest(unittest.TestCase):
